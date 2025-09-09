@@ -1,0 +1,9 @@
+Proving Grounds Labs|Linux|Amaterasu|Hard
+Proving Grounds Labs|Linux|Loly|Hard
+Proving Grounds Labs|Linux|Potato|Hard
+Proving Grounds Labs|Linux|Stapler|Hard
+Proving Grounds Labs|Linux|BBScute|Hard
+Proving Grounds Labs|Linux|Gaara|Hard
+Proving Grounds Labs|Linux|Blogger|Hard
+Proving Grounds Labs|Linux|FunboxEasyEnum|Hard
+Proving Grounds Labs|Linux|GlasgowSmile|Hard
