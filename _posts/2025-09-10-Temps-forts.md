@@ -4,12 +4,7 @@ icon: "fas fa-flag"
 order: 6
 ---
 # Les Temps Forts du HackerLab 2025  
-<div align="center">
-  <video controls playsinline style="max-width:900px; width:100%; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-    <source src="{{ '/assets/videos/4.mp4' | relative_url }}" type="video/mp4">
-    Votre navigateur ne supporte pas la lecture vidéo.
-  </video>
-</div>
+
 Le HackerLab, ce n’est pas seulement une compétition. C’est une véritable aventure humaine et technique, faite de nuits blanches, de rires, de stress, de victoires et parfois de galères.  
 En 2025, j’ai vécu des moments intenses qui resteront gravés dans ma mémoire. Voici les temps forts qui m’ont marqué, ainsi que mon équipe et tous les participants.  
 
