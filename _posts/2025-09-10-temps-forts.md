@@ -1,9 +1,9 @@
 ---
-title: "Les Temps Forts du HackerLab 2025 "
+title: "Les Temps Forts du HackerLab  "
 icon: "fas fa-flag"
 order: 6
 ---
-# Les Temps Forts du HackerLab 2025  
+# Les Temps Forts du HackerLab   
 <div align="center">
   <video controls playsinline style="max-width:900px; width:100%; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
     <source src="{{ '/assets/videos/4.mp4' | relative_url }}" type="video/mp4">
