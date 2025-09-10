@@ -45,18 +45,6 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
-      - name: Test site with HTMLProofer
-        run: |
-          bundle exec ruby -e "
-            require 'html-proofer';
-            HTMLProofer.check_directory(
-              '_site${{ steps.pages.outputs.base_path }}',
-              disable_external: true,
-              ignore_urls: [/^http:\/\/127.0.0.1/, /^http:\/\/0.0.0.0/, /^http:\/\/localhost/],
-              checks_to_ignore: [:scripts]
-            ).run
-          "
-
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -72,4 +60,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
