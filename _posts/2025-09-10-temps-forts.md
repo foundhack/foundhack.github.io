@@ -1,13 +1,8 @@
 ---
 title: "Les Temps Forts du HackerLab 2025 "
 icon: "fas fa-flag"
-order: 4
+order: 6
 ---
-
-
-
-
-
 # Les Temps Forts du HackerLab 2025  
 <div align="center">
   <video controls playsinline style="max-width:900px; width:100%; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
