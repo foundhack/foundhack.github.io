@@ -5,9 +5,16 @@ order: 4
 ---
 
 # ❓ Qu’est-ce que le HackerLab et comment se déroule réellement cette compétition de cybersécurité au Bénin ?
+<div align="center">
+  <video controls playsinline style="max-width:900px; width:100%; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <source src="{{ '/assets/videos/Hackerlab2024.mp4' | relative_url }}" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture vidéo.
+  </video>
+</div>
+
 
 Avant de parler de ma propre réussite au HackerLab, ce blog sera d’abord destiné à présenter en détail cette compétition : son fonctionnement, ses étapes, ses récompenses et son importance dans l’écosystème de la cybersécurité béninoise.
-
+![HackerLab 2024]({{ '/assets/img/posts/hackerlab/2.jpg' | relative_url }})
 Le HackerLab est la compétition nationale de cybersécurité organisée chaque année au Bénin par l’Agence des Systèmes d’Information et du Numérique (ASIN). C’est une compétition de type CTF (Capture The Flag) où les passionnés de cybersécurité de nationalité béninoise se rassemblent pour relever des défis techniques liés à la sécurité informatique.
 
 Chaque édition du HackerLab se déroule autour d’un thème précis, qui sert de base à la création des challenges. Parfois, la compétition est organisée en individuel, comme ce fut le cas en 2024, mais en général elle se joue en équipe de quatre personnes maximum. Beaucoup de nouveaux participants posent la question : comment se déroule le HackerLab ?
@@ -17,7 +24,7 @@ La compétition est ouverte à tous les passionnés de cybersécurité du Bénin
 La deuxième étape est la finale, qui se déroule en présentiel sur une durée de quarante-huit heures non-stop. Le lieu est généralement annoncé par l’ASIN quelques semaines avant l’événement. L’objectif est simple : terminer dans le Top 3, car ce sont ces places qui sont récompensées.
 
 Les récompenses varient selon les éditions, mais on retrouve souvent des certifications prestigieuses comme l’OSCP, des chèques cadeaux conséquents, ainsi que de nombreuses opportunités professionnelles, allant de l’intégration au bjCSIRT à des missions locales et internationales. En plus des prix principaux, des distinctions spéciales sont attribuées, telles que le prix du meilleur jeune hacker (que j’ai eu l’honneur de remporter en 2025), le prix de la meilleure révélation féminine, ou encore celui du meilleur hacker de la compétition.
-
+![HackerLab 2025]({{ '/assets/img/posts/hackerlab/4.jpg' | relative_url }})
 Beaucoup de personnes demandent également : quelle est la date de lancement du HackerLab ? En réalité, la date est toujours communiquée par l’ASIN sur ses différents canaux de communication officiels. Ainsi, si vous suivez l’ASIN sur les réseaux sociaux, vous serez informés dès l’annonce et ne manquerez pas le lancement de la compétition.
 
 👉 Après cette présentation générale, je vais maintenant vous partager mon expérience personnelle et ma réussite au HackerLab, une aventure qui m’a marqué et ouvert de nombreuses opportunités.

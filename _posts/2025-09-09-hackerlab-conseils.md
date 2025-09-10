@@ -3,7 +3,7 @@ title: "Conseils pour les futurs guerriers du HackerLab"
 icon: "fas fa-flag"
 order: 1
 ---
-
+![HackerLab 2024]({{ '/assets/img/posts/hackerlab/1.jpg' | relative_url }})
 # 🛡️ Conseils pour les futurs guerriers du HackerLab
 
 Participer au **HackerLab** demande une préparation sérieuse et beaucoup de temps. Voici quelques conseils et un arsenal d’outils pour vous aider à être prêts pour les prochaines éditions.

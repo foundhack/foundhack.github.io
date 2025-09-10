@@ -9,7 +9,12 @@ order: 5
 Avant de lire cette seconde partie, je vous recommande vivement de consulter la [partie 1](/posts/mon-post-hackerlab-partie-1/) afin de bien comprendre ce qu’est réellement le **HackerLab**.  
 
 ---
-
+<div align="center">
+  <video controls playsinline style="max-width:900px; width:100%; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <source src="{{ '/assets/videos/3.mp4' | relative_url }}" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture vidéo.
+  </video>
+</div>
 ## Mes débuts avec le HackerLab
 J’ai découvert le HackerLab durant l’année scolaire **2022-2023**. Je me souviens encore du jour de la finale : c’était précisément le jour où je faisais ma rentrée au lycée. Ce jour-là, je m’étais fait une promesse : *l’année prochaine, je participerai à cette compétition*.  
 
@@ -68,7 +73,7 @@ En décembre 2024, j’ai participé au **Christmas CTF** (organisé par une éq
 Une victoire qui m’a ouvert les portes d’une équipe motivée, partageant le même objectif que moi : briller au HackerLab.  
 
 ---
-
+![HackerLab 2025]({{ '/assets/img/posts/hackerlab/5.jpg' | relative_url }})
 ## Le HackerLab 2025 : La consécration
 En 2025, avec mon équipe, nous nous étions lancé un défi clair : atteindre le Top 1.
 Pas de demi-mesure, pas d’excuse. Chaque semaine, nous choisissions un CTF international sur CTFtime, et nos week-ends étaient dédiés à la compétition. Pendant la semaine, chacun poursuivait son apprentissage de son côté, en décortiquant des write-ups et en partageant ses trouvailles avec l’équipe.
