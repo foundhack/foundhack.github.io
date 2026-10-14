@@ -20,9 +20,9 @@ timezone: Africa/Benin
 
 title: foundhack # the main title
 
-tagline: De la curiosité à la maîtrise | Hack, learn & share | From 0 to Hero # it will display as the sub-title
+tagline: Cybersécurité Offensive & Développement Système | Vainqueur HackerLab 2025 # it will display as the sub-title
 
-description: "Journal de Foundhack, explorateur passionné des CTF et de la cybersécurité. Partage, apprentissage et progression au fil des défis."
+description: "Portfolio et writeups de Chamss-Dine AGBIZOUNON (foundhack) — Cybersécurité offensive, Red Team, Golang, C Unix et architectures web."
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 
@@ -34,16 +34,14 @@ github:
 twitter:
   username: foundhack # change to your twitter username
 
-# ... [le début reste identique] ...
-
 social:
-  name: AGBIZOUNON CHAMSS-DINE
-  email: foundhack119@gmail.com
+  name: CHAMSS-DINE ADEDOYI AGBIZOUNON
+  email: chamss-dine.agbizounon@epitech.eu
   links:
     - https://github.com/foundhack
     - https://twitter.com/foundhack
     - https://www.linkedin.com/in/foundhack/
-        - /feed.xml
+    - /feed.xml
 
 # ... [le milieu reste identique] ...
 
