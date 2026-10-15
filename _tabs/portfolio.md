@@ -415,10 +415,10 @@ order: 2
     </nav>
   </header>
 
-  <!-- 2. PROJETS SÉLECTIONNÉS (MAXIMUM TROIS PROJETS) -->
+  <!-- 2. PROJETS -->
   <section class="pf-section" aria-labelledby="section-projects">
     <h2 id="section-projects" class="pf-section-title">
-      <i class="fas fa-folder-open" aria-hidden="true"></i> Projets Sélectionnés
+      <i class="fas fa-folder-open" aria-hidden="true"></i> Projets
     </h2>
 
     <div class="pf-projects-list">
@@ -516,6 +516,134 @@ order: 2
           <span class="pf-tag">Ghidra</span>
           <span class="pf-tag">GDB</span>
           <span class="pf-tag">Audit de Code</span>
+        </div>
+      </article>
+
+      <!-- PROJET 4 : HACK & JUICE -->
+      <article class="pf-project-card">
+        <div class="pf-project-header">
+          <h3 class="pf-project-title">Hack & Juice</h3>
+          <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
+        </div>
+        <div class="pf-project-role">Audit de sécurité web & Tests d'intrusion (OWASP Top 10)</div>
+        <div class="pf-project-details">
+          <p>
+            <strong>Objectif :</strong> Réaliser un audit méthodique de sécurité d'une application web, cartographier les surfaces d'attaque, identifier les vulnérabilités applicatives et rédiger un rapport technique de remédiation.
+          </p>
+          <p>
+            <strong>Contribution personnelle :</strong>
+          </p>
+          <ul>
+            <li>Interception et analyse des flux HTTP/HTTPS avec Burp Suite pour détecter des failles de logique métier.</li>
+            <li>Identification et exploitation contrôlée de vulnérabilités OWASP (injections SQL, failles XSS, défauts de contrôle d'accès).</li>
+            <li>Rédaction d'une documentation technique détaillant les scénarios d'attaque et les mesures correctives préconisées.</li>
+          </ul>
+          <p>
+            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
+          </p>
+        </div>
+        <div class="pf-tags">
+          <span class="pf-tag">Burp Suite</span>
+          <span class="pf-tag">OWASP Top 10</span>
+          <span class="pf-tag">Audit Web</span>
+          <span class="pf-tag">Sécurité Applicative</span>
+        </div>
+      </article>
+
+      <!-- PROJET 5 : TARDIS -->
+      <article class="pf-project-card">
+        <div class="pf-project-header">
+          <h3 class="pf-project-title">Tardis</h3>
+          <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
+        </div>
+        <div class="pf-project-role">Data Science, modélisation prédictive & visualisation interactive</div>
+        <div class="pf-project-details">
+          <p>
+            <strong>Objectif :</strong> Traiter et analyser des jeux de données réels pour concevoir un modèle de prédiction supervisé et restituer les indicateurs métier via une interface interactive.
+          </p>
+          <p>
+            <strong>Contribution personnelle :</strong>
+          </p>
+          <ul>
+            <li>Nettoyage, normalisation et analyse exploratoire des données (EDA) avec Python et Pandas.</li>
+            <li>Entraînement et optimisation de modèles prédictifs (régression / classification) à l'aide de Scikit-Learn.</li>
+            <li>Conception et déploiement d'un tableau de bord de visualisation interactive avec Streamlit.</li>
+          </ul>
+          <p>
+            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
+          </p>
+        </div>
+        <div class="pf-tags">
+          <span class="pf-tag">Python</span>
+          <span class="pf-tag">Scikit-Learn</span>
+          <span class="pf-tag">Pandas</span>
+          <span class="pf-tag">Streamlit</span>
+          <span class="pf-tag">Data Science</span>
+        </div>
+      </article>
+
+      <!-- PROJET 6 : EPYTODO -->
+      <article class="pf-project-card">
+        <div class="pf-project-header">
+          <h3 class="pf-project-title">Epytodo</h3>
+          <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
+        </div>
+        <div class="pf-project-role">Conception d'API REST backend & Persistance relationnelle</div>
+        <div class="pf-project-details">
+          <p>
+            <strong>Objectif :</strong> Développer une API backend robuste de gestion de tâches et d'utilisateurs, respectant l'architecture RESTful et les standards de sécurité d'authentification.
+          </p>
+          <p>
+            <strong>Contribution personnelle :</strong>
+          </p>
+          <ul>
+            <li>Implémentation de l'architecture MVC sous Node.js et Express avec TypeScript.</li>
+            <li>Modélisation et requêtage de la base de données relationnelle sous MySQL avec gestion des contraintes d'intégrité.</li>
+            <li>Sécurisation des accès par hachage de mots de passe (bcrypt) et authentification par jetons signés JWT.</li>
+          </ul>
+          <p>
+            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
+          </p>
+        </div>
+        <div class="pf-tags">
+          <span class="pf-tag">TypeScript</span>
+          <span class="pf-tag">Node.js</span>
+          <span class="pf-tag">Express</span>
+          <span class="pf-tag">MySQL</span>
+          <span class="pf-tag">JWT</span>
+          <span class="pf-tag">API REST</span>
+        </div>
+      </article>
+
+      <!-- PROJET 7 : MINISHELL 2 & CHOCOLATINE -->
+      <article class="pf-project-card">
+        <div class="pf-project-header">
+          <h3 class="pf-project-title">Minishell 2 & Chocolatine</h3>
+          <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
+        </div>
+        <div class="pf-project-role">Programmation système Unix en C & Intégration Continue (CI/CD)</div>
+        <div class="pf-project-details">
+          <p>
+            <strong>Objectif :</strong> Développer un interpréteur de commandes Unix complet en langage C conforme à la norme POSIX, intégré à une chaîne automatisée de tests et de contrôle de normes (Chocolatine).
+          </p>
+          <p>
+            <strong>Contribution personnelle :</strong>
+          </p>
+          <ul>
+            <li>Programmation système bas niveau : gestion des processus (fork, execve, waitpid), manipulation des descripteurs de fichiers pour les pipes (<code>|</code>) et redirections (<code>&gt;</code>, <code>&lt;</code>, <code>&gt;&gt;</code>).</li>
+            <li>Gestion propre de la mémoire, gestion des signaux POSIX et traitement robuste des erreurs système.</li>
+            <li>Mise en place d'un pipeline d'intégration continue GitHub Actions pour automatiser l'analyse statique du code et les tests unitaires à chaque commit.</li>
+          </ul>
+          <p>
+            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
+          </p>
+        </div>
+        <div class="pf-tags">
+          <span class="pf-tag">Langage C</span>
+          <span class="pf-tag">POSIX</span>
+          <span class="pf-tag">Linux</span>
+          <span class="pf-tag">GitHub Actions</span>
+          <span class="pf-tag">CI/CD</span>
         </div>
       </article>
 
