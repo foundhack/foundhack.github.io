@@ -446,7 +446,7 @@ order: 2
     </div>
 
     <p class="pf-bio">
-      Étudiant à Epitech Bénin (Promo 2030, 1ère année validée) et joueur de CTF. Passionné par la sécurité offensive, le développement système (C, Go) et l'administration Linux. Vainqueur et Meilleur Jeune Hacker au HACKERLAB 2025 (ANSSI Bénin).
+      Étudiant à Epitech Bénin (Promo 2030, 1ère année validée) et joueur de CTF. Passionné par la sécurité offensive, le développement système (C, Go) et l'administration Linux. Vainqueur et Meilleur Jeune Hacker au HACKERLAB 2025 (ASIN).
     </p>
 
     <div class="pf-meta-bar">
@@ -457,7 +457,7 @@ order: 2
         <i class="fas fa-university" aria-hidden="true"></i> Epitech Bénin (Promo 2030)
       </div>
       <div class="pf-meta-item">
-        <i class="fas fa-trophy" aria-hidden="true"></i> 1ère Place & Meilleur Jeune Hacker — HACKERLAB 2025 (ANSSI Bénin)
+        <i class="fas fa-trophy" aria-hidden="true"></i> 1ère Place & Meilleur Jeune Hacker — HACKERLAB 2025 (ASIN)
       </div>
     </div>
 
@@ -797,13 +797,13 @@ order: 2
           <tr>
             <td><strong>2025</strong></td>
             <td><strong>1ère place nationale</strong></td>
-            <td>HACKERLAB 2025 · ANSSI Bénin</td>
+            <td>HACKERLAB 2025 · ASIN</td>
             <td>En équipe (Team BJ_S3C)</td>
           </tr>
           <tr>
             <td><strong>2025</strong></td>
             <td><strong>Prix du Meilleur Jeune Hacker</strong></td>
-            <td>HACKERLAB 2025 · ANSSI Bénin</td>
+            <td>HACKERLAB 2025 · ASIN</td>
             <td>Distinction individuelle nationale</td>
           </tr>
           <tr>
@@ -821,7 +821,7 @@ order: 2
           <tr>
             <td><strong>2024</strong></td>
             <td>Finaliste (14e / 50+)</td>
-            <td>HACKERLAB 2024 · ANSSI Bénin</td>
+            <td>HACKERLAB 2024 · ASIN</td>
             <td>Individuel</td>
           </tr>
         </tbody>
