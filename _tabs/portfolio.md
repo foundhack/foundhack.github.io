@@ -381,7 +381,7 @@ order: 2
     </div>
 
     <p class="pf-bio">
-      Étudiant en 1ère année à Epitech Bénin (Promo 2029) et titulaire d'un Diplôme de Technicien en maintenance informatique. Intérêt marqué pour la sécurité offensive responsable, la programmation système (Go, C) et l'analyse de vulnérabilités. Pratiquant régulier de compétitions CTF et engagé dans le partage technique.
+      Étudiant à Epitech Bénin (Promo 2030, 1ère année achevée) et titulaire d'un Diplôme de Technicien en maintenance informatique. Intérêt marqué pour la sécurité offensive responsable, la programmation système (Go, C) et l'analyse de vulnérabilités. Pratiquant régulier de compétitions CTF et engagé dans le partage technique.
     </p>
 
     <div class="pf-meta-bar">
@@ -389,10 +389,10 @@ order: 2
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cotonou, Bénin
       </div>
       <div class="pf-meta-item">
-        <i class="fas fa-university" aria-hidden="true"></i> Epitech Bénin
+        <i class="fas fa-university" aria-hidden="true"></i> Epitech Bénin (Promo 2030)
       </div>
       <div class="pf-meta-item">
-        <i class="fas fa-trophy" aria-hidden="true"></i> Vainqueur HackerLab 2025 (ANSSI Bénin)
+        <i class="fas fa-trophy" aria-hidden="true"></i> Vainqueur & Meilleur Jeune Hacker — HACKERLAB 2025 (ANSSI Bénin)
       </div>
     </div>
 
@@ -542,9 +542,9 @@ order: 2
         <tbody>
           <tr>
             <td><strong>2025 – 2028</strong></td>
-            <td>Bachelor en Technologies de l'Information</td>
+            <td>Bachelor en Technologies de l'Information (Promo 2030)</td>
             <td>Epitech Bénin (Cotonou)</td>
-            <td>Cursus d'ingénierie informatique orienté projets : programmation système en C, algorithmique, réseaux, sécurité et DevOps.</td>
+            <td>Cursus d'ingénierie informatique orienté projets : programmation système en C, algorithmique, réseaux, sécurité et DevOps (1ère année achevée).</td>
           </tr>
           <tr>
             <td><strong>2022 – 2025</strong></td>
@@ -653,7 +653,7 @@ order: 2
           </tr>
           <tr>
             <td><strong>2025</strong></td>
-            <td><strong>Prix du Plus Jeune Hacker</strong></td>
+            <td><strong>Prix du Meilleur Jeune Hacker</strong></td>
             <td>HACKERLAB 2025 · ANSSI Bénin</td>
             <td>Distinction individuelle nationale</td>
           </tr>
