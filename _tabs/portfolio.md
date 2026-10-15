@@ -8,53 +8,66 @@ order: 2
 
 <style>
   :root {
-    --pf-bg-card: #0f172a;
-    --pf-border: #1e293b;
-    --pf-border-hover: #38bdf8;
-    --pf-text-primary: #f8fafc;
+    /* Palette sobre, authentique et adaptée au thème */
+    --pf-bg-card: rgba(255, 255, 255, 0.02);
+    --pf-border: rgba(255, 255, 255, 0.08);
+    --pf-border-hover: rgba(255, 255, 255, 0.2);
+    --pf-text-primary: #f1f5f9;
     --pf-text-secondary: #94a3b8;
     --pf-text-muted: #64748b;
-    --pf-accent: #0284c7;
-    --pf-accent-light: #38bdf8;
-    --pf-tag-bg: #1e293b;
-    --pf-tag-border: #334155;
-    --pf-status-prep: #fef3c7;
-    --pf-status-prep-text: #92400e;
-    --pf-status-prep-border: #fcd34d;
-    --pf-status-live: #ecfdf5;
-    --pf-status-live-text: #065f46;
-    --pf-status-live-border: #a7f3d0;
+    --pf-accent: #3b82f6;
+    --pf-accent-soft: rgba(59, 130, 246, 0.12);
+    --pf-accent-text: #93c5fd;
+    --pf-tag-bg: rgba(255, 255, 255, 0.03);
+    --pf-tag-border: rgba(255, 255, 255, 0.07);
+  }
+
+  /* Support du thème clair de Chirpy si activé */
+  html[data-mode='light'] {
+    --pf-bg-card: #ffffff;
+    --pf-border: #e2e8f0;
+    --pf-border-hover: #cbd5e1;
+    --pf-text-primary: #0f172a;
+    --pf-text-secondary: #475569;
+    --pf-text-muted: #64748b;
+    --pf-accent: #2563eb;
+    --pf-accent-soft: rgba(37, 99, 235, 0.08);
+    --pf-accent-text: #1d4ed8;
+    --pf-tag-bg: #f8fafc;
+    --pf-tag-border: #e2e8f0;
   }
 
   .portfolio-root {
     color: var(--pf-text-primary);
     line-height: 1.6;
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 10px 0 30px;
+    padding: 10px 0 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   /* Header */
   .pf-header {
     border-bottom: 1px solid var(--pf-border);
     padding-bottom: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .pf-name {
-    font-size: 1.85rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: 1.9rem;
+    font-weight: 750;
+    letter-spacing: -0.025em;
     color: var(--pf-text-primary);
     margin: 0 0 6px 0;
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
   .pf-name .pf-alias {
-    color: var(--pf-accent-light);
+    color: var(--pf-text-muted);
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     font-weight: 500;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
+    margin-left: 4px;
   }
 
   .pf-headline {
@@ -68,7 +81,7 @@ order: 2
     color: var(--pf-text-secondary);
     font-size: 0.95rem;
     margin-bottom: 18px;
-    max-width: 820px;
+    max-width: 800px;
     line-height: 1.65;
   }
 
@@ -84,66 +97,81 @@ order: 2
   .pf-meta-item {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
+  }
+
+  .pf-meta-item i {
+    color: var(--pf-accent-text);
+    font-size: 0.9rem;
   }
 
   .pf-meta-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 14px;
+    gap: 10px;
+    margin-top: 18px;
   }
 
   .pf-link-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
+    gap: 7px;
+    padding: 6px 13px;
     border-radius: 6px;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     font-weight: 500;
     text-decoration: none !important;
-    background: #1e293b;
+    background: var(--pf-bg-card);
     color: var(--pf-text-primary) !important;
-    border: 1px solid #334155;
-    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    border: 1px solid var(--pf-border);
+    transition: all 0.15s ease;
+  }
+
+  .pf-link-btn i {
+    color: var(--pf-text-muted);
+    transition: color 0.15s ease;
   }
 
   .pf-link-btn:hover, .pf-link-btn:focus-visible {
-    background: #0f172a;
-    border-color: var(--pf-accent-light);
-    color: var(--pf-accent-light) !important;
+    background: var(--pf-tag-bg);
+    border-color: var(--pf-border-hover);
+    color: var(--pf-text-primary) !important;
+    transform: translateY(-1px);
     outline: none;
+  }
+
+  .pf-link-btn:hover i {
+    color: var(--pf-accent-text);
   }
 
   /* Section Styling */
   .pf-section {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   .pf-section-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
     color: var(--pf-text-primary);
-    margin: 0 0 16px 0;
+    margin: 0 0 18px 0;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--pf-border);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
   }
 
   .pf-section-title i {
-    color: var(--pf-accent-light);
-    font-size: 1rem;
+    color: var(--pf-text-muted);
+    font-size: 0.95rem;
   }
 
-  /* Project Cards (Max 3) */
+  /* Project Cards */
   .pf-projects-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
   }
 
   .pf-project-card {
@@ -151,65 +179,90 @@ order: 2
     border: 1px solid var(--pf-border);
     border-radius: 8px;
     padding: 20px 22px;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
   }
 
   .pf-project-card:hover {
     border-color: var(--pf-border-hover);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
 
   .pf-project-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 4px;
   }
 
   .pf-project-title {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     font-weight: 700;
     color: var(--pf-text-primary);
     margin: 0;
+    letter-spacing: -0.01em;
   }
 
+  /* Status Badges with subtle status-dot */
   .pf-status-badge {
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 9999px;
     border: 1px solid transparent;
   }
 
+  .pf-status-badge::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
   .pf-status-research {
-    background: rgba(56, 189, 248, 0.1);
-    color: var(--pf-accent-light);
-    border-color: rgba(56, 189, 248, 0.25);
+    background: rgba(59, 130, 246, 0.08);
+    color: #93c5fd;
+    border-color: rgba(59, 130, 246, 0.2);
+  }
+
+  .pf-status-research::before {
+    background: #60a5fa;
   }
 
   .pf-status-personal {
-    background: rgba(16, 185, 129, 0.1);
-    color: #34d399;
-    border-color: rgba(16, 185, 129, 0.25);
+    background: rgba(16, 185, 129, 0.08);
+    color: #6ee7b7;
+    border-color: rgba(16, 185, 129, 0.2);
+  }
+
+  .pf-status-personal::before {
+    background: #34d399;
   }
 
   .pf-status-academic {
-    background: rgba(148, 163, 184, 0.1);
+    background: rgba(148, 163, 184, 0.08);
     color: #cbd5e1;
-    border-color: rgba(148, 163, 184, 0.25);
+    border-color: rgba(148, 163, 184, 0.2);
+  }
+
+  .pf-status-academic::before {
+    background: #94a3b8;
   }
 
   .pf-project-role {
-    font-size: 0.82rem;
-    color: var(--pf-accent-light);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    margin-bottom: 10px;
+    font-size: 0.83rem;
+    color: var(--pf-text-muted);
+    font-weight: 500;
+    margin-bottom: 12px;
   }
 
   .pf-project-details {
-    font-size: 0.9rem;
+    font-size: 0.89rem;
     color: var(--pf-text-secondary);
     line-height: 1.6;
     margin-bottom: 12px;
@@ -220,7 +273,7 @@ order: 2
   }
 
   .pf-project-details ul {
-    margin: 4px 0 8px 20px;
+    margin: 4px 0 8px 18px;
     padding: 0;
   }
 
@@ -230,31 +283,39 @@ order: 2
 
   .pf-project-details code {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    background: rgba(255, 255, 255, 0.06);
-    color: #e2e8f0;
-    padding: 1px 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--pf-text-primary);
+    padding: 2px 5px;
     border-radius: 3px;
     font-size: 0.85em;
+    border: 1px solid var(--pf-border);
   }
 
   .pf-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .pf-tag {
-    font-size: 0.74rem;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.73rem;
+    font-family: inherit;
+    font-weight: 500;
     background: var(--pf-tag-bg);
-    color: #cbd5e1;
+    color: var(--pf-text-secondary);
     border: 1px solid var(--pf-tag-border);
-    padding: 2px 7px;
+    padding: 2px 8px;
     border-radius: 4px;
+    transition: all 0.15s ease;
   }
 
-  /* Tables (Sober, Accessible, Semantic) */
+  .pf-tag:hover {
+    color: var(--pf-text-primary);
+    border-color: var(--pf-border-hover);
+  }
+
+  /* Tables (Sober, Minimalist, Engineering-grade) */
   .pf-table-wrapper {
     overflow-x: auto;
     border: 1px solid var(--pf-border);
@@ -265,26 +326,27 @@ order: 2
   .pf-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.88rem;
+    font-size: 0.87rem;
     text-align: left;
   }
 
   .pf-table th {
-    background: #1e293b;
-    color: var(--pf-text-primary);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--pf-text-muted);
     font-weight: 600;
     padding: 10px 14px;
     border-bottom: 1px solid var(--pf-border);
-    font-size: 0.82rem;
+    font-size: 0.76rem;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
   }
 
   .pf-table td {
-    padding: 12px 14px;
+    padding: 11px 14px;
     border-bottom: 1px solid var(--pf-border);
     color: var(--pf-text-secondary);
     vertical-align: top;
+    line-height: 1.5;
   }
 
   .pf-table tr:last-child td {
@@ -293,13 +355,14 @@ order: 2
 
   .pf-table td strong {
     color: var(--pf-text-primary);
+    font-weight: 600;
   }
 
   /* Skills Block */
   .pf-skills-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .pf-skill-row {
@@ -311,16 +374,15 @@ order: 2
 
   .pf-skill-title {
     font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--pf-accent-light);
+    font-weight: 650;
+    color: var(--pf-text-primary);
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
   }
 
   .pf-skill-items {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--pf-text-secondary);
     line-height: 1.55;
   }
@@ -339,8 +401,8 @@ order: 2
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: 0.9rem;
+    gap: 10px;
+    font-size: 0.89rem;
   }
 
   .pf-contact-list li {
@@ -351,17 +413,20 @@ order: 2
   }
 
   .pf-contact-list a {
-    color: var(--pf-accent-light) !important;
+    color: var(--pf-text-primary) !important;
     text-decoration: none;
+    border-bottom: 1px solid var(--pf-border);
+    transition: border-color 0.15s ease, color 0.15s ease;
   }
 
   .pf-contact-list a:hover, .pf-contact-list a:focus-visible {
-    text-decoration: underline !important;
+    color: var(--pf-accent-text) !important;
+    border-color: var(--pf-accent-text);
   }
 
   @media (max-width: 640px) {
     .pf-name { font-size: 1.5rem; }
-    .pf-name .pf-alias { font-size: 1.15rem; }
+    .pf-name .pf-alias { font-size: 1.1rem; }
     .pf-meta-bar { flex-direction: column; align-items: flex-start; gap: 6px; }
     .pf-project-card { padding: 16px; }
     .pf-table th, .pf-table td { padding: 8px 10px; font-size: 0.82rem; }
@@ -381,7 +446,7 @@ order: 2
     </div>
 
     <p class="pf-bio">
-      Étudiant à Epitech Bénin (Promo 2030, 1ère année achevée) et titulaire d'un Diplôme de Technicien en maintenance informatique. Intérêt marqué pour la sécurité offensive responsable, la programmation système (Go, C) et l'analyse de vulnérabilités. Pratiquant régulier de compétitions CTF et engagé dans le partage technique.
+      Étudiant à Epitech Bénin (Promo 2030, 1ère année validée) et joueur de CTF. Passionné par la sécurité offensive, le développement système (C, Go) et l'administration Linux. Vainqueur et Meilleur Jeune Hacker au HACKERLAB 2025 (ANSSI Bénin).
     </p>
 
     <div class="pf-meta-bar">
@@ -392,7 +457,7 @@ order: 2
         <i class="fas fa-university" aria-hidden="true"></i> Epitech Bénin (Promo 2030)
       </div>
       <div class="pf-meta-item">
-        <i class="fas fa-trophy" aria-hidden="true"></i> Vainqueur & Meilleur Jeune Hacker — HACKERLAB 2025 (ANSSI Bénin)
+        <i class="fas fa-trophy" aria-hidden="true"></i> 1ère Place & Meilleur Jeune Hacker — HACKERLAB 2025 (ANSSI Bénin)
       </div>
     </div>
 
@@ -427,31 +492,25 @@ order: 2
       <article class="pf-project-card">
         <div class="pf-project-header">
           <h3 class="pf-project-title">Foundhack C2</h3>
-          <span class="pf-status-badge pf-status-research">Recherche en Laboratoire</span>
+          <span class="pf-status-badge pf-status-research">Recherche en Lab</span>
         </div>
-        <div class="pf-project-role">Framework de simulation de commande & contrôle · Environnement de test isolé</div>
+        <div class="pf-project-role">Framework de Command & Control (C2) modulaire</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Étude des techniques de communication furtive exploitant des API tierces (canal covert) et analyse des mécanismes de détection associés en environnement de test isolé.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Projet de recherche personnel en sécurité offensive pour tester des scénarios d'attaque et d'évasion en environnement de test isolé.
           </p>
           <ul>
-            <li>Conception d'un prototype d'implant en Go implémentant la gestion des appels système indirects sous Windows (recherche sur les techniques Hell's Gate / Halo's Gate) et la restauration des hooks de <code>ntdll.dll</code> pour l'analyse des comportements de sécurité.</li>
-            <li>Développement du contrôleur en Python avec chiffrement symétrique de bout en bout (AES-256-GCM, dérivation PBKDF2) et fragmentation de messages.</li>
-            <li>Rédaction d'une matrice de détection documentant les indicateurs de compromission (IOCs) mémoire et réseau (approche Purple Team).</li>
+            <li>Développement d'un agent léger en Go avec recherche sur les appels système indirects sous Windows pour contourner les hooks d'analyse.</li>
+            <li>Serveur de contrôle en Python avec communication chiffrée de bout en bout (AES-256-GCM) et fragmentation des messages.</li>
+            <li>Analyse défensive : identification des traces laissées en mémoire et documentation des indicateurs de compromission (IOCs).</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Prototype expérimental de recherche personnelle, développé strictement en laboratoire d'apprentissage sans déploiement hors périmètre de test.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">Golang</span>
           <span class="pf-tag">Python</span>
           <span class="pf-tag">AES-256-GCM</span>
-          <span class="pf-tag">API REST</span>
-          <span class="pf-tag">Sécurité Offensive & Détection</span>
+          <span class="pf-tag">Docker</span>
+          <span class="pf-tag">Purple Team</span>
         </div>
       </article>
 
@@ -459,31 +518,25 @@ order: 2
       <article class="pf-project-card">
         <div class="pf-project-header">
           <h3 class="pf-project-title">TekFlow (MouliBot)</h3>
-          <span class="pf-status-badge pf-status-personal">Projet Personnel</span>
+          <span class="pf-status-badge pf-status-personal">En Production</span>
         </div>
-        <div class="pf-project-role">Automatisation & Transmission de notifications académiques</div>
+        <div class="pf-project-role">Bot d'automatisation des résultats académiques Epitech</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Automatiser la consultation et l'acheminement en temps réel des résultats d'évaluation académique (tests automatisés) vers des canaux de messagerie instantanée.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Service d'automatisation surveillant les résultats de la Moulinette Epitech pour alerter instantanément les étudiants lors des livrables de projets.
           </p>
           <ul>
-            <li>Développement d'un pipeline d'interrogation et de traitement asynchrone des notifications en Python et Node.js.</li>
-            <li>Mise en place d'une persistance locale des données et états de session avec SQLite.</li>
-            <li>Intégration d'adaptateurs pour webhooks Discord et API WhatsApp.</li>
+            <li>Interrogation asynchrone des APIs de l'intranet avec gestion des sessions et persistance d'historique sous SQLite.</li>
+            <li>Transmission en temps réel des résultats détaillés via webhooks Discord et alertes WhatsApp.</li>
+            <li>Déployé, monitoré et maintenu sur un serveur VPS Linux personnel.</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Outil personnel fonctionnel, hébergé sur serveur privé pour des besoins d'organisation et d'automatisation d'études.
-          </p>
         </div>
         <div class="pf-tags">
+          <span class="pf-tag">TypeScript</span>
           <span class="pf-tag">Python</span>
-          <span class="pf-tag">Node.js</span>
           <span class="pf-tag">SQLite</span>
-          <span class="pf-tag">Webhooks</span>
-          <span class="pf-tag">Linux</span>
+          <span class="pf-tag">Discord API</span>
+          <span class="pf-tag">Linux VPS</span>
         </div>
       </article>
 
@@ -493,29 +546,23 @@ order: 2
           <h3 class="pf-project-title">Obsidian</h3>
           <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
         </div>
-        <div class="pf-project-role">Rétro-ingénierie & Audit de sécurité binaire (Module G-SEC-210)</div>
+        <div class="pf-project-role">Rétro-ingénierie & Correction de failles mémoires</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Réaliser un audit de sécurité complet (boîte noire et boîte blanche) d'un binaire Linux ELF 64-bit fourni dans le cadre du cursus Epitech, identifier les faiblesses d'implémentation et proposer des correctifs sécurisés.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Audit de sécurité complet d'un binaire Linux ELF 64 bits dans le cadre du cursus Epitech.
           </p>
           <ul>
-            <li>Analyse statique et décompilation du binaire sous Ghidra, identification des structures de données et des flux d'exécution.</li>
-            <li>Débogage dynamique sous GDB et fuzzing manuel pour repérer des anomalies d'exécution et des corruptions mémoire.</li>
-            <li>Rédaction de patchs de remédiation en langage C pour corriger les vulnérabilités identifiées et sécuriser le code source.</li>
+            <li>Analyse statique et décompilation sous Ghidra pour comprendre le fonctionnement interne et les structures de données.</li>
+            <li>Débogage dynamique sous GDB pour isoler les corruptions mémoires et les accès hors limites.</li>
+            <li>Conception et intégration de patchs en langage C pour sécuriser le code et corriger les vulnérabilités.</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">Langage C</span>
-          <span class="pf-tag">Linux ELF 64-bit</span>
+          <span class="pf-tag">Linux ELF</span>
           <span class="pf-tag">Ghidra</span>
           <span class="pf-tag">GDB</span>
-          <span class="pf-tag">Audit de Code</span>
+          <span class="pf-tag">Audit Mémoire</span>
         </div>
       </article>
 
@@ -525,27 +572,21 @@ order: 2
           <h3 class="pf-project-title">Hack & Juice</h3>
           <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
         </div>
-        <div class="pf-project-role">Audit de sécurité web & Tests d'intrusion (OWASP Top 10)</div>
+        <div class="pf-project-role">Audit de sécurité web applicative (OWASP Top 10)</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Réaliser un audit méthodique de sécurité d'une application web, cartographier les surfaces d'attaque, identifier les vulnérabilités applicatives et rédiger un rapport technique de remédiation.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Évaluation méthodique de la sécurité d'une application web vulnérable selon les standards de l'OWASP.
           </p>
           <ul>
-            <li>Interception et analyse des flux HTTP/HTTPS avec Burp Suite pour détecter des failles de logique métier.</li>
-            <li>Identification et exploitation contrôlée de vulnérabilités OWASP (injections SQL, failles XSS, défauts de contrôle d'accès).</li>
-            <li>Rédaction d'une documentation technique détaillant les scénarios d'attaque et les mesures correctives préconisées.</li>
+            <li>Interception et analyse des flux HTTP/HTTPS avec Burp Suite pour tester la logique applicative.</li>
+            <li>Exploitation contrôlée de vulnérabilités : injections SQL, failles XSS et défauts de contrôle d'accès.</li>
+            <li>Rédaction d'un rapport technique d'audit détaillant les scénarios d'attaque et les mesures correctives.</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">Burp Suite</span>
           <span class="pf-tag">OWASP Top 10</span>
-          <span class="pf-tag">Audit Web</span>
+          <span class="pf-tag">Pentest Web</span>
           <span class="pf-tag">Sécurité Applicative</span>
         </div>
       </article>
@@ -556,29 +597,22 @@ order: 2
           <h3 class="pf-project-title">Tardis</h3>
           <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
         </div>
-        <div class="pf-project-role">Data Science, modélisation prédictive & visualisation interactive</div>
+        <div class="pf-project-role">Data Science & Modélisation prédictive</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Traiter et analyser des jeux de données réels pour concevoir un modèle de prédiction supervisé et restituer les indicateurs métier via une interface interactive.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Projet d'exploration de données et de modélisation prédictive supervisée.
           </p>
           <ul>
-            <li>Nettoyage, normalisation et analyse exploratoire des données (EDA) avec Python et Pandas.</li>
-            <li>Entraînement et optimisation de modèles prédictifs (régression / classification) à l'aide de Scikit-Learn.</li>
-            <li>Conception et déploiement d'un tableau de bord de visualisation interactive avec Streamlit.</li>
+            <li>Nettoyage, traitement et analyse exploratoire des données (EDA) avec Python et Pandas.</li>
+            <li>Entraînement et évaluation de modèles de classification et de régression avec Scikit-Learn.</li>
+            <li>Développement d'un tableau de bord web interactif sous Streamlit pour visualiser les indicateurs.</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">Python</span>
           <span class="pf-tag">Scikit-Learn</span>
           <span class="pf-tag">Pandas</span>
           <span class="pf-tag">Streamlit</span>
-          <span class="pf-tag">Data Science</span>
         </div>
       </article>
 
@@ -588,22 +622,16 @@ order: 2
           <h3 class="pf-project-title">Epytodo</h3>
           <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
         </div>
-        <div class="pf-project-role">Conception d'API REST backend & Persistance relationnelle</div>
+        <div class="pf-project-role">API REST backend sécurisée avec MySQL</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Développer une API backend robuste de gestion de tâches et d'utilisateurs, respectant l'architecture RESTful et les standards de sécurité d'authentification.
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Conception d'une API backend de gestion de tâches et d'utilisateurs respectant l'architecture RESTful.
           </p>
           <ul>
-            <li>Implémentation de l'architecture MVC sous Node.js et Express avec TypeScript.</li>
-            <li>Modélisation et requêtage de la base de données relationnelle sous MySQL avec gestion des contraintes d'intégrité.</li>
-            <li>Sécurisation des accès par hachage de mots de passe (bcrypt) et authentification par jetons signés JWT.</li>
+            <li>Architecture MVC développée sous Node.js et Express avec typage TypeScript.</li>
+            <li>Modélisation de la base de données relationnelle sous MySQL avec requêtes sécurisées.</li>
+            <li>Gestion de l'authentification par jetons JWT et sécurisation des mots de passe avec bcrypt.</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">TypeScript</span>
@@ -611,7 +639,6 @@ order: 2
           <span class="pf-tag">Express</span>
           <span class="pf-tag">MySQL</span>
           <span class="pf-tag">JWT</span>
-          <span class="pf-tag">API REST</span>
         </div>
       </article>
 
@@ -621,22 +648,16 @@ order: 2
           <h3 class="pf-project-title">Minishell 2 & Chocolatine</h3>
           <span class="pf-status-badge pf-status-academic">Projet Académique Epitech</span>
         </div>
-        <div class="pf-project-role">Programmation système Unix en C & Intégration Continue (CI/CD)</div>
+        <div class="pf-project-role">Interpréteur de commandes Unix en C & CI/CD</div>
         <div class="pf-project-details">
           <p>
-            <strong>Objectif :</strong> Développer un interpréteur de commandes Unix complet en langage C conforme à la norme POSIX, intégré à une chaîne automatisée de tests et de contrôle de normes (Chocolatine).
-          </p>
-          <p>
-            <strong>Contribution personnelle :</strong>
+            Développement d'un interpréteur de commandes Unix conforme à la norme POSIX, couplé à une chaîne de tests continus.
           </p>
           <ul>
-            <li>Programmation système bas niveau : gestion des processus (fork, execve, waitpid), manipulation des descripteurs de fichiers pour les pipes (<code>|</code>) et redirections (<code>&gt;</code>, <code>&lt;</code>, <code>&gt;&gt;</code>).</li>
-            <li>Gestion propre de la mémoire, gestion des signaux POSIX et traitement robuste des erreurs système.</li>
-            <li>Mise en place d'un pipeline d'intégration continue GitHub Actions pour automatiser l'analyse statique du code et les tests unitaires à chaque commit.</li>
+            <li>Programmation système bas niveau : gestion des processus (fork, execve, waitpid), des pipes (<code>|</code>), des redirections (<code>&gt;</code>, <code>&lt;</code>, <code>&gt;&gt;</code>) et des signaux Unix.</li>
+            <li>Gestion rigoureuse de la mémoire sans fuite et respect strict de la norme de codage Epitech.</li>
+            <li>Automatisation des tests et du contrôle qualité à chaque commit via GitHub Actions (workflow Chocolatine).</li>
           </ul>
-          <p>
-            <strong>État réel :</strong> Projet académique terminé, évalué et validé dans le cadre du cursus Epitech.
-          </p>
         </div>
         <div class="pf-tags">
           <span class="pf-tag">Langage C</span>
